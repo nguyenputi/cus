@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edt_mail"
+        android:layout_alignStart="@+id/edt_mail"
+        android:layout_below="@+id/edt_mail"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_alignLeft="@+id/edt_mail"
+        android:layout_alignStart="@+id/edt_mail" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="Contact"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_contact"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="30dp"
+        android:text="Name : " />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="27dp"
+        android:text="Email : " />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_alignStart="@+id/tv_email"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginTop="27dp"
+        android:text="Phone : " />
+
+    <EditText
+        android:id="@+id/edt_mail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_below="@+id/edt_name"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:layout_toEndOf="@+id/tv_phone" />
+
+</RelativeLayout>
